@@ -1,0 +1,205 @@
+// Variables //
+$font-family: "Comfortaa", sans-serif;
+$font-family-comic: "Comic Neue", sans-serif;
+$background-color: #ffffff;
+$pacman-bg-color: #17110d;
+$logo-bg-color: yellow;
+
+// Tamaño de letras //
+$font-size: medium;
+$title-font-size: 30px;
+$small-font-size: 10px;
+$medium-font-size: 20px;
+$large-font-size: 30px;
+
+//  Lista de Colores //
+$colores: yellow, coral, aqua, #0e0c0c, lightcoral, black, #6e1f15;
+
+//Mixins//
+@mixin shake-left {
+  @keyframes shake-left {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 0 50%;
+    }
+
+    10% {
+      transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+
+    80% {
+      transform: rotate(-2deg);
+    }
+
+    90% {
+      transform: rotate(2deg);
+    }
+  }
+}
+
+@mixin tracking-in-contract {
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 0.6em;
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0.6;
+    }
+
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+}
+
+@mixin link-styles {
+  font-weight: bold;
+  font-size: $font-size;
+  text-decoration: none;
+
+  &:hover {
+    background: $logo-bg-color;
+  }
+
+  &:link {
+    color: blue;
+  }
+
+  &:visited {
+    color: purple;
+  }
+}
+
+@mixin title-styles {
+  font-family: cursive;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@mixin table-styles {
+  margin: auto;
+  text-align: center;
+  --bs-body-bg: cornsilk;
+  border-collapse: collapse;
+  font-weight: bold;
+  border: 2px darkmagenta;
+  width: 40% !important;
+
+  thead {
+    font-family: cursive;
+  }
+}
+
+@mixin star-styles {
+  display: inline-block;
+  margin: 0 4px;
+  cursor: pointer;
+
+  &:before {
+    content: "\2605";
+    font-size: 24px;
+    color: #ddd;
+  }
+
+  &.checked:before {
+    content: "\2605";
+    color: #ffcc00;
+  }
+}
+
+@mixin iframe-styles {
+  border: 0;
+  width: 100%;
+  height: 75%;
+}
+
+@mixin socials-styles {
+  text-align: end;
+  display: flex;
+  justify-content: end;
+}
+
+@mixin footer-styles {
+  width: 100%;
+  background-color: nth($colores, 5);
+  text-align: center;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+@mixin navbarcustom1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@mixin abrirmenu {
+  display: block;
+  margin-left: 96%;
+}
+
+@mixin cerrarMenu {
+  display: none;
+}
+
+@mixin listcustom1 {
+  flex-direction: column;
+  align-items: end;
+  margin-top: 25px;
+}
+
+@mixin logo-1 {
+  top: 20px;
+  left: 5%;
+}
+
+@mixin logo-2 {
+  margin-left: 30px;
+  width: 10%;
+}
+
+@mixin ft-1- {
+  margin-top: 0px;
+  font-size: 8px;
+}
+
+@mixin animacion {
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+@mixin socials {
+  display: flex;
+  justify-content: end;
+}

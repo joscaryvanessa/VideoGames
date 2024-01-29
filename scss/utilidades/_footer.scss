@@ -1,0 +1,47 @@
+footer {
+  @include footer-styles;
+}
+
+.logo {
+  width: 25px;
+  height: auto;
+}
+
+.redes {
+  text-align: center;
+  font-weight: bold;
+  font-size: $medium-font-size;
+  color: nth($colores, 7);
+  text-decoration: underline;
+  margin-right: 100px;
+  text-align: end;
+  margin-top: 10px;
+  font-family: cursive;
+}
+
+.footer-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.ft-1- {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.logo-2 {
+  width: 7%;
+  height: auto;
+  display: block;
+  margin-bottom: -110px;
+  margin-left: 100px;
+  transform: rotate(354deg);
+  animation: shake-left 0.8s linear both;
+  @include shake-left;
+}
+
+.socials {
+  @include socials-styles;
+}

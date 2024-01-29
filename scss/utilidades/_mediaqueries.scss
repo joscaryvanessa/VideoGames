@@ -1,0 +1,374 @@
+//maps//
+$breakpoints: (
+  sm1: 280px,
+  sm2: 420px,
+  sm3: 450px,
+  md1: 540px,
+  md2: 768px,
+  md3: 900px,
+  lg1: 990px,
+  lg2: 1110px,
+  lg3: 1290px,
+);
+
+@mixin media-up($breakpoint, $key) {
+  @media screen and (max-width: map-get($breakpoints, $key)) {
+    @content;
+  }
+}
+
+.abrirmenu {
+  @include media-up($breakpoints, "lg3") {
+    @include abrirmenu;
+  }
+  @include media-up($breakpoints, "lg2") {
+    @include abrirmenu;
+  }
+  @include media-up($breakpoints, "md3") {
+    margin-left: 95%;
+  }
+  @include media-up($breakpoints, "md2") {
+    margin-left: 92%;
+  }
+  @include media-up($breakpoints, "sm3") {
+    margin-left: 88%;
+    font-size: 15px;
+  }
+  @include media-up($breakpoints, "sm2") {
+    margin-left: 88%;
+    font-size: 15px;
+  }
+  @include media-up($breakpoints, "sm1") {
+    margin-left: 88%;
+    font-size: 12px;
+  }
+}
+
+.navbarcustom1 {
+  @include media-up($breakpoints, "lg3") {
+    @include navbarcustom1;
+  }
+  @include media-up($breakpoints, "lg2") {
+    @include navbarcustom1;
+  }
+}
+
+.listcustom1 {
+  @include media-up($breakpoints, "lg3") {
+    @include listcustom1;
+  }
+  @include media-up($breakpoints, "lg2") {
+    @include listcustom1;
+  }
+}
+
+.logo-1 {
+  @include media-up($breakpoints, "lg3") {
+    @include logo-1;
+  }
+  @include media-up($breakpoints, "lg2") {
+    @include logo-1;
+  }
+}
+
+.logo-2 {
+  @include media-up($breakpoints, "lg3") {
+    @include logo-2;
+  }
+  @include media-up($breakpoints, "lg2") {
+    @include logo-2;
+  }
+  @include media-up($breakpoints, "md3") {
+    margin-left: 5px;
+  }
+  @include media-up($breakpoints, "md2") {
+    margin-left: 10px;
+  }
+  @include media-up($breakpoints, "md1") {
+    display: none;
+  }
+  @include media-up($breakpoints, "sm3") {
+    display: none;
+  }
+  @include media-up($breakpoints, "sm2") {
+    display: none;
+  }
+  @include media-up($breakpoints, "sm1") {
+    display: none;
+  }
+}
+
+.ft-1- {
+  @include media-up($breakpoints, "lg3") {
+    margin-top: 20px;
+  }
+  @include media-up($breakpoints, "lg2") {
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  @include media-up($breakpoints, "md2") {
+    margin-top: 40px;
+  }
+  @include media-up($breakpoints, "md1") {
+    margin-top: 0px;
+  }
+  @include media-up($breakpoints, "sm3") {
+    margin-top: 0px;
+    font-size: 8px;
+  }
+  @include media-up($breakpoints, "sm2") {
+    @include ft-1-;
+  }
+  @include media-up($breakpoints, "sm1") {
+    @include ft-1-;
+  }
+}
+
+.pie {
+  @include media-up($breakpoints, "lg3") {
+    margin-top: 50px;
+  }
+  @include media-up($breakpoints, "lg2") {
+    margin-top: 50px;
+  }
+  @include media-up($breakpoints, "md3") {
+    margin-top: 20px;
+  }
+  @include media-up($breakpoints, "md2") {
+    margin-top: 40px;
+  }
+  @include media-up($breakpoints, "md1") {
+    margin-top: 40px;
+    margin-bottom: -100px;
+  }
+}
+
+.animacion {
+  @include media-up($breakpoints, "lg3") {
+    @include animacion;
+  }
+  @include media-up($breakpoints, "lg2") {
+    @include animacion;
+  }
+  @include media-up($breakpoints, "md3") {
+    @include animacion;
+  }
+  @include media-up($breakpoints, "md2") {
+    @include animacion;
+  }
+  @include media-up($breakpoints, "md1") {
+    margin-top: 10px;
+  }
+  @include media-up($breakpoints, "sm2") {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  @include media-up($breakpoints, "sm1") {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+
+.socials {
+  @include media-up($breakpoints, "lg3") {
+    @include socials;
+  }
+  @include media-up($breakpoints, "lg2") {
+    @include socials;
+  }
+  @include media-up($breakpoints, "lg1") {
+    @include socials;
+  }
+  @include media-up($breakpoints, "md3") {
+    @include socials;
+  }
+  @include media-up($breakpoints, "md2") {
+    @include socials;
+  }
+  @include media-up($breakpoints, "md1") {
+    @include socials;
+  }
+  @include media-up($breakpoints, "sm2") {
+    @include socials;
+  }
+  @include media-up($breakpoints, "sm1") {
+    display: flex;
+    justify-content: left;
+  }
+}
+
+.videogame {
+  @include media-up($breakpoints, "lg2") {
+    margin-top: 35px;
+    font-size: 25px;
+  }
+  @include media-up($breakpoints, "lg1") {
+    margin-top: 30px;
+    font-size: $large-font-size;
+  }
+  @include media-up($breakpoints, "md3") {
+    margin-top: 30px;
+    font-size: $large-font-size;
+  }
+  @include media-up($breakpoints, "md2") {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+  @include media-up($breakpoints, "md1") {
+    margin-top: 30px;
+    font-size: $medium-font-size;
+  }
+  @include media-up($breakpoints, "sm3") {
+    margin-top: 30px;
+    font-size: $medium-font-size;
+  }
+  @include media-up($breakpoints, "sm2") {
+    margin-top: 30px;
+    font-size: $medium-font-size;
+  }
+  @include media-up($breakpoints, "sm1") {
+    margin-top: 30px;
+    font-size: $medium-font-size;
+  }
+}
+
+.p-3 {
+  @include media-up($breakpoints, "lg3") {
+    font-size: $small-font-size;
+    margin-top: -35px;
+  }
+  @include media-up($breakpoints, "md3") {
+    font-size: 7px;
+  }
+}
+
+.color-1 {
+  @include media-up($breakpoints, "lg3") {
+    font-size: $small-font-size;
+  }
+}
+
+.title-custom {
+  @include media-up($breakpoints, "lg3") {
+    font-size: 15px;
+  }
+  @include media-up($breakpoints, "sm1") {
+    margin-left: 0px;
+  }
+}
+
+.last-image {
+  @include media-up($breakpoints, "lg3") {
+    margin-bottom: $medium-font-size;
+  }
+  @include media-up($breakpoints, "lg2") {
+    margin-bottom: 40px;
+  }
+}
+
+.p-2 {
+  @include media-up($breakpoints, "lg1") {
+    margin-top: 0px;
+    font-size: 7px;
+  }
+  @include media-up($breakpoints, "md2") {
+    margin-top: 0px;
+    font-size: $small-font-size;
+  }
+}
+
+.parrafo {
+  @include media-up($breakpoints, "lg1") {
+    font-size: $medium-font-size;
+  }
+  @include media-up($breakpoints, "md3") {
+    font-size: $medium-font-size;
+  }
+  @include media-up($breakpoints, "md2") {
+    font-size: 15px;
+  }
+  @include media-up($breakpoints, "md1") {
+    font-size: 12px;
+  }
+}
+
+.bg-1 {
+  @include media-up($breakpoints, "md2") {
+    font-size: $small-font-size;
+  }
+}
+
+.title-2 {
+  @include media-up($breakpoints, "md2") {
+    font-size: 25px;
+  }
+  @include media-up($breakpoints, "md1") {
+    font-size: $medium-font-size;
+  }
+  @include media-up($breakpoints, "sm2") {
+    font-size: 15px;
+  }
+  @include media-up($breakpoints, "sm1") {
+    font-size: 15px;
+  }
+}
+
+.table-custom {
+  @include media-up($breakpoints, "md1") {
+    font-size: 14px;
+  }
+  @include media-up($breakpoints, "md1") {
+    font-size: 5px;
+  }
+  @include media-up($breakpoints, "sm2") {
+    font-size: 5px;
+  }
+  @include media-up($breakpoints, "sm1") {
+    font-size: 5px;
+  }
+}
+
+.title-3 {
+  @include media-up($breakpoints, "md1") {
+    font-size: 25px;
+  }
+  @include media-up($breakpoints, "sm2") {
+    font-size: 15px;
+  }
+  @include media-up($breakpoints, "sm1") {
+    font-size: 18px;
+  }
+}
+
+.table {
+  @include media-up($breakpoints, "sm2") {
+    font-size: $small-font-size;
+  }
+  @include media-up($breakpoints, "sm1") {
+    font-size: 8px;
+  }
+}
+
+.cerrarmenu {
+  @include media-up($breakpoints, "sm2") {
+    left: 90%;
+  }
+  @include media-up($breakpoints, "sm1") {
+    left: 90%;
+  }
+}
+
+.main {
+  @include media-up($breakpoints, "sm2") {
+    margin-left: 50px;
+  }
+  @include media-up($breakpoints, "sm1") {
+    margin-left: 50px;
+  }
+}
+
+p {
+  @include media-up($breakpoints, "sm2") {
+    font-size: 12px;
+  }
+}
