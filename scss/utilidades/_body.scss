@@ -1,0 +1,215 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: $background-color;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.col {
+  font-family: monospace;
+  margin-top: 80px;
+}
+
+.parrafo {
+  color: nth($colores, 6);
+  font-size: $title-font-size;
+  text-align: justify;
+}
+
+.p-2 {
+  color: nth($colores, 6);
+  margin-top: 15px;
+  font-family: cursive;
+  font-size: $small-font-size;
+}
+
+.p-3 {
+  color: nth($colores, 6);
+  margin-top: -30px;
+}
+
+.top-tabla {
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 80px;
+  text-align: -webkit-center;
+  animation: tracking-in-expand-forward-bottom 0.4s linear both;
+  color: nth($colores, 2);
+}
+
+.animacion {
+  animation: tracking-in-contract 0.4s linear both;
+  @include tracking-in-contract;
+}
+
+.title-3 {
+  text-align: center;
+  color: nth($colores, 7);
+  font-family: cursive;
+  font-size: $title-font-size;
+  text-decoration: overline;
+}
+
+.title-4 {
+  font-size: $small-font-size;
+  font-family: monospace;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#top {
+  text-align: center;
+  margin-top: 50%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.color-1 {
+  background: lightcyan;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+.card-border {
+  border: 1px solid nth($colores, 4);
+}
+
+.card-title {
+  flex-grow: 1;
+}
+
+.carousel {
+  position: relative;
+  background: nth($colores, 4);
+  height: auto;
+  width: auto;
+}
+
+.card-fill {
+  background-color: blue;
+  width: 70%;
+  margin-left: 13%;
+}
+
+.col {
+  margin-top: unset !important;
+}
+
+.star-border {
+  border-bottom: 1px solid nth($colores, 4);
+}
+
+.imagenes {
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.col-6 {
+  margin-top: 20px;
+  flex: 0 0 auto;
+  width: 50%;
+  text-align: justify;
+}
+
+.titulo {
+  background-color: nth($colores, 3);
+  color: nth($colores, 2);
+  box-shadow: 4px 4px 8px black;
+  font-size: $medium-font-size;
+  @include title-styles;
+}
+
+.title-2 {
+  color: nth($colores, 2);
+  box-shadow: 4px 4px 8px nth($colores, 6);
+  text-align: center;
+  font-size: $title-font-size;
+  @include title-styles;
+}
+
+.title-custom {
+  text-align: center;
+  color: nth($colores, 2);
+  font-family: cursive;
+  text-decoration: overline;
+  font-size: $medium-font-size;
+  margin-top: 10px;
+}
+
+.custom-img {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.table {
+  @include table-styles;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.videogame {
+  display: flow-root;
+  font-weight: bold;
+  text-align: -webkit-center;
+  animation: tracking-in-expand-forward-bottom 0.4s linear both;
+  color: nth($colores, 2);
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+
+.star {
+  @include star-styles;
+}
+
+.table-custom {
+  text-align: -webkit-center;
+  color: #dc143c;
+  font-family: cursive;
+  font-size: $medium-font-size;
+}
+
+.table-1 {
+  background: cornsilk;
+}
+
+.not-show {
+  display: none;
+}
+
+iframe {
+  @include iframe-styles;
+}
+
+.row {
+  margin-inline: 0px !important;
+}

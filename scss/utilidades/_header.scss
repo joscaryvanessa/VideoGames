@@ -1,0 +1,129 @@
+.pacman {
+  position: relative;
+  text-align: center;
+  margin-top: auto;
+  background-color: $pacman-bg-color;
+  max-width: 100%;
+
+  img:first-child {
+    width: 55%;
+  }
+}
+
+.logo-1 {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  z-index: 1;
+  width: 8%;
+  z-index: 2;
+  transform: rotate(354deg);
+  animation: shake-left 0.8s linear both;
+  @include shake-left;
+}
+
+.abrirmenu {
+  font-size: 1.25rem;
+  background-color: $logo-bg-color;
+  cursor: pointer;
+  display: none;
+}
+
+.cerrarmenu {
+  font-size: 1.25rem;
+  background-color: $logo-bg-color;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  left: 96%;
+}
+
+header {
+  display: contents;
+  background-image: url("../img/pacman.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  color: $background-color;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbarcustom1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 120%;
+  justify-content: end;
+  z-index: 1000;
+}
+
+li {
+  display: flex;
+  position: relative;
+  top: -10px;
+  margin: 0;
+  padding: 5px 14px;
+  font-size: 14px;
+  color: nth($colores, 4);
+  border: double;
+  border-radius: 5px;
+  background-color: $logo-bg-color;
+}
+
+.bg-1 {
+  background: $logo-bg-color;
+}
+
+a:active {
+  color: red;
+  background-color: nth($colores, 3);
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 40%;
+}
+
+a {
+  @include link-styles;
+  font-weight: bold;
+  font-size: $font-size;
+  text-decoration: none;
+}
+
+.menu {
+  background-color: nth($colores, 5);
+}
+
+.navbar-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: $background-color;
+  margin: 5px 0;
+}
