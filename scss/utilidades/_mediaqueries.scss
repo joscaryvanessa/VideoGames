@@ -356,6 +356,18 @@ $breakpoints: (
   @include media-up($breakpoints, "sm1") {
     left: 90%;
   }
+  @include media-up($breakpoints, "md3") {
+    left: 95%;
+  }
+  @include media-up($breakpoints, "md2") {
+    left: 92%;
+  }
+  @include media-up($breakpoints, "sm3") {
+    left: 87%;
+  }
+  @include media-up($breakpoints, "sm1") {
+    left: 85%;
+  }
 }
 
 .main {
@@ -370,5 +382,20 @@ $breakpoints: (
 p {
   @include media-up($breakpoints, "sm2") {
     font-size: 12px;
+  }
+}
+
+.col-6 {
+  @include media-up($breakpoints, "md2") {
+    display: contents;
+  }
+}
+
+.imagenes {
+  @include media-up($breakpoints, "md2") {
+    width: 150%;
+    margin-left: 65px;
+    border: 5px solid #6e1f15;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
   }
 }
