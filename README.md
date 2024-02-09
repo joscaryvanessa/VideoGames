@@ -1,3 +1,3 @@
-Mi primera pagina Web
-
--- Curso Desarrollo Web, en CoderHouse --
+..Mi primera pagina Web
+dedicada a los videojuegos..
+-- utilizando html, scss/boostrap, y javascript --
